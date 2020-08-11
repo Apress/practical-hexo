@@ -1,0 +1,8 @@
+<% if(theme.widgets.archives){ %>
+	<div class="sidebar-module">
+	    <h4><%= __('Archives') %></h4>
+	    <div class="widget">
+	      <%- list_archives({show_count: theme.show_count, type: theme.archive_type}) %>
+	    </div>
+	</div>
+<% } %>

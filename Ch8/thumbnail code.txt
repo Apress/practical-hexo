@@ -1,0 +1,24 @@
+JS code:
+--------------
+        <% if (post.thumbnail){ %>
+          <div class="post-thumbnail">
+              <a href="<%- url_for(post.path) %>">
+                <img src="<%- url_for(post.thumbnail) %>" alt="<%= post.title %>" itemprop="image">
+              </a>
+          </div>
+        <% } %>
+
+CSS code:
+--------------
+div.post-thumbnail {
+  width: 150px;
+  height: 150px;
+  float: left;
+  border: 1px solid pink;
+  margin-right: 10px;
+}
+
+div.post-thumbnail > a > img {
+  width: 150px;
+  height: auto;
+}

@@ -1,0 +1,24 @@
+<div class="grid">
+  <div class="post-image">
+      <img src="<%- url_for(page.image) %>" alt="<%- page.name %>">
+  </div>
+
+  <div class="post-details">
+    <div class="price"><h3><%- page.name %></h3></div>
+    <div class="price">$<%- page.price.toFixed(2) %></div>
+    <div class="price"><%- page.content %></div>
+
+    <% if (page.product) { %>
+      <!-- Enter Snipcart buy button here -->
+      <button class="snipcart-add-item"
+        data-item-id="<%- page.product.id %>"
+        data-item-price="<%- page.price %>"
+        data-item-description="<%- page.content %>"
+        data-item-image="../<%- page.image %>"
+        data-item-name="<%- page.name%>"
+        data-item-url="<%- page.permalink %>">
+        Add to cart
+      </button>
+    <% } %>
+  </div>    
+</div>

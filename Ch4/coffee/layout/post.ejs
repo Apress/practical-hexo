@@ -1,0 +1,32 @@
+<div class='row'>
+  <a class='btn btn-default' href='/'>< Home</a>
+</div>
+<div>
+  <h3><%- page.title %></h3>
+  <div class='text-muted'>
+ 	<span class="glyphicon glyphicon-calendar"></span>
+    <%= date(page.date, config.date_format) %> 
+    <% if(page.author) { %>
+      by <%- page.author %>
+    <% } %>
+  </div>
+  <%- page.content %>
+  <%- partial('_partial/article-tags', {item: page}) %>
+  <%- partial('_partial/article-categories', {item: page}) %>
+  
+  <% if (config.disqus_shortname){ %>
+  <script>
+    var disqus_shortname = '<%= config.disqus_shortname %>';
+    <% if (page.permalink){ %>
+    var disqus_url = '<%= page.permalink %>';
+    <% } %>
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//go.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+<% } %>
+</div>

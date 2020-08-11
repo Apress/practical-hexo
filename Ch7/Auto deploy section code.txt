@@ -1,0 +1,6 @@
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/<your GitHub username>/<your GitHub site name>.github.io.git
+  branch: master

@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<title><%- config.title %></title>
+<%- css('/css/styles.css') %>
+
+<!-- Favicon -->
+<% if (theme.favicon_url){ %>
+  <link rel="icon" href="<%- url_for(theme.favicon_url) %>" type="image/x-icon" />
+<% } %>
+
+<!-- Meta description tag -->
+<% if (config.description){ %>
+    <meta name="description" content="<%= config.description %>">
+<% } %>

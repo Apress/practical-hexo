@@ -1,0 +1,27 @@
+index:
+  title: Practical Hexo | Home
+  header: 
+    title: Coffee
+    description: A theme created for the Hexo platform
+  menu: 
+    Home: Home
+    Archives: Archives
+    Test: Test Page
+    YTPage: Test Post with YouTube
+  about:
+    title: About
+  tagcloud:
+    title: Tag Cloud
+  archivelist:
+    title: Archives
+  categories:
+    title: Categories
+  pagination:
+    forward: Next
+    backward: Previous
+  navlinks:
+    continue: ...continue reading
+page:
+  home: Home
+  authoredby: by
+

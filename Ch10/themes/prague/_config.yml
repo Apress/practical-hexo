@@ -1,0 +1,10 @@
+# Header
+menu:
+  Home: /
+  About: /about/
+  Contact: /contact/
+
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false

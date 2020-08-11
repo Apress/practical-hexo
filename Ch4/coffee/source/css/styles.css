@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'homemade_appleregular';
+    src: url('../fonts/HomemadeApple-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #000000;
+}
+
+nav a {
+  color: #df8740;
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+nav a:hover {
+  color: #eab082;
+  font-size: 16px;
+}
+
+footer {
+	width: 100%;
+  background-color: #a35c32;
+  display: block;
+  padding: 30px;
+}
+
+footer > span {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+footer > span > a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h1, h4 {
+  font-family: 'homemade_appleregular', sans-serif;
+}
+
+h1.blog-title {
+  font-size: 48px;
+  color: #eab082;
+}
+
+h4 {
+  margin-top: 5px;
+  background-color: #eab082;
+  padding-left: 10px;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+nav a {
+  font-size: 16px;
+  padding: 0px 10px;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #eab082;
+  text-decoration: none;
+  display: inline-block;  
+}
+
+center img {
+  width: 100%;
+  height: auto;
+}
+
+#masthead {
+  background-color: #000000;
+  height: 30px;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+#header {
+  background-color: pink;
+  background-image: url('../img/coffee.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+}
+
+#header .row {
+  background-color: rgb(0,0,0,0.5);
+  padding: 12px 16px;
+  color: #ffffff;
+  margin-top: 50px;
+  width: 300px;
+  height: 180px;
+}
+
+#header .row h1 {
+  margin-bottom: 25px;
+}
+
+.main {
+  width: 70%;
+  float: left;
+  margin-bottom: 40px;
+}
+
+.main .row {
+  margin-top: 10px;
+}
+
+.main .row ul {
+  list-style: none;
+}
+
+.main .row ul li {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
+}
+
+.main .row ul.pager li {
+  border-bottom: none;
+}
+
+.blog-sidebar {
+  float: right;
+  width: 25%;
+  padding-top: 5%;
+}
+
+.glyphicon {
+  padding-right: 5px;
+}
+
+div.sidebar-module {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 15px 10px;
+}
+
+div.text-muted {
+  padding-bottom: 20px;
+  margin-top: -7px;
+  font-size: 12px;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social ul li {
+  display: inline-block;
+}
+
+

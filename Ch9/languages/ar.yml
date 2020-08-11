@@ -1,0 +1,27 @@
+index:
+  title: هيكسو عملي | الصفحة الرئيسية
+  header: 
+    title: قهوة
+    description: موضوع تم إنشاؤه لمنصة Hexo
+  menu: 
+    Home: الصفحة الرئيسية
+    Archives: أرشيف
+    Test: صفحة الاختبار
+    YTPage: Test Post with YouTube
+  about:
+    title: حول
+  tagcloud:
+    title: علامة سحابة
+  archivelist:
+    title: أرشيف
+  categories:
+    title: التصنيفات
+  pagination:
+    forward: التالى
+    backward: السابق
+  navlinks:
+    continue: ...أكمل القراءة
+page:
+  home: الصفحة الرئيسية
+  authoredby: بواسطة
+

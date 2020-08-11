@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- partial('_partial/head') %>
+</head>
+<body>
+  <div id="site">
+    <header>
+    	<%- partial('_partial/header') %>
+    </header>
+
+    <% if (page.current_url == "") { %>
+      <div id="masthead">
+        <img src="../images/header.jpg">
+      </div>
+    <% } %>
+
+    <div hidden id="snipcart" data-api-key="<%- config.snipcart_api_key %>"></div>
+
+    <div class='container'>
+    	<%- body %>
+    </div>
+
+    <footer>
+      <div>
+        <span>&copy; GoCoffee 2020</span>
+        <span><a href="sitemap.xml">Sitemap</a></span>
+        <span>
+          <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </span>
+      </div>
+    </footer>
+
+  </div>
+  <% if (config.snipcart_api_key) { %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="<%- config.snipcart_api_key %>"></script>
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <% } %>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  margin: 0px;
+  display: flex;
+  line-height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #2D2227;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: ;
+}
+
+header {
+  background-color: #ccb2ab;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav {
+  line-height: 100px;  
+  font-weight: bold;
+}
+
+div.headtitle {
+  display: flex;
+}
+
+div.headtitle img {
+  width: 36px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: -10px;  
+}
+
+div.headtitle > a > p {
+  position: relative;
+  margin-top: -30px;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+}
+
+#menu ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+#menu ul li a {
+  padding: 10px;
+}
+
+#menu ul li a:hover {
+  background-color: #97949E;
+  padding: 10px;
+}
+
+#menu > ul > a > img {
+  width: 24px;
+  vertical-align: middle;
+}
+
+#masthead {
+  background-color: lightgrey;
+  height: 300px;
+  display: block;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  padding: 0;
+  position: relative;  
+}
+
+.container {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;  
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 30%;
+  margin-top: 30px;
+}
+
+#shop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 30%;
+}
+
+#shop .grid {
+  flex-direction: column;
+}
+
+.post-image {
+  margin-right: 20px;
+}
+
+.post-image a img {
+  width: 150px;
+  height: auto;
+}
+
+.post-details {
+  text-align: center;
+  width: 30%;
+}
+
+div.pagecontent {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  display: grid;  
+  margin-top: 20px;
+}
+
+div.pagecontent h3 {
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid #eee;
+  height: 100px;
+  padding: 30px 15px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer > div > span {
+  border-left: 1px solid #97949E;
+}
+
+footer > div > span:first-child {
+  border-left: none;
+}
+
+footer > div > span:nth-child(2) > a {
+  margin-left: 5px;
+}
+
+footer > div > span > a > i {
+  padding: 0 5px 0 5px;
+}
+
+footer > div > span > a:hover {
+  background-color: #97949E;
+  color: #ffffff;
+}
+
+/* Snipcart - Buy button */
+button.snipcart-add-item {
+    color: #000;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #ccb2ab;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    opacity: 0.8;
+    border: solid #ccb2ab 2px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.snipcart-add-item:hover {
+    opacity: 1;
+}
+
+/* Basket override colors */
+#snipcart-header {
+  background-color: #ccb2ab;
+}
+
+#snipcart-title {
+  color: #000000;
+}
+
+span.snipcart-summary {
+  background-color: #97949E;
+  border-radius: 75px;
+  padding: 2px;
+  position: absolute;
+  color: #ffffff;
+  line-height: initial;
+  margin-top: 30px;
+  margin-left: 2px;
+  width: 14px;
+  height: auto;
+  text-align: center;
+  font-size: 12px;
+}

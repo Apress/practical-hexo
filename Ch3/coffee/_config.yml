@@ -1,0 +1,22 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  Test Page: /Test-page/
+  Test Post with YouTube: /uncategorized/Test-Post-with-YouTube/
+
+
+# Read More text
+excerpt_link: ...continue reading
+
+# Widgets List
+widgets:
+  about: This is a demo theme built for Hexo blogs
+  tags: true
+  archives: true
+  categories: true
+
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false

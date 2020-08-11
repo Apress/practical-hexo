@@ -1,0 +1,26 @@
+index:
+  title: Practical Hexo | Acceuil
+  header: 
+    title: Coffee
+    description: Un thème créé pour la plateforme Hexo
+  menu: 
+    Home: Acceuil
+    Archives: Les Archives
+    Test: Page de Test
+    YTPage: Page de test YouTube
+  about:
+    title: A propos de
+  tagcloud:
+    title: Sujets populaires
+  archivelist:
+    title: Les Archives
+  categories:
+    title: Catégories
+  pagination:
+    forward: Prochain
+    backward: Précédent
+  navlinks:
+    continue: ...continuez la lecture    
+page:
+  home: Accueill   
+  authoredby: par

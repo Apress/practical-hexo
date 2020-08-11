@@ -1,0 +1,30 @@
+<div class='row'>
+  <ul>
+    <% page.posts.each(function(post){ %>
+      <li>
+        <h3>
+          <a href="<%- url_for(post.path) %>">
+            <%= post.title %>
+          </a>
+        </h3>
+        <div class='text-muted'>
+          <span class="glyphicon glyphicon-calendar"></span>
+          <%= date(post.date, config.date_format) %> 
+          <% if(post.author) { %>
+            by <%- post.author %>
+          <% } %>
+        </div>
+         
+        <% if(post.excerpt) { %>
+            <%- post.excerpt %>
+
+          <a href="<%- config.root %><%- post.path %>">
+            <%= theme.excerpt_link %>
+          </a>
+
+        <% } %>
+      </li>
+    <% }) %>
+    <%- partial('_partial/pagination') %>
+  </ul>
+</div>

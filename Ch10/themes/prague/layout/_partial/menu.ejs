@@ -1,0 +1,13 @@
+<nav id="menu">
+  <ul>
+    <% for (var i in theme.menu){ %>
+      <li><a class="blog-nav-item" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+    <% } %>
+	  <a href="#" class="snipcart-checkout">
+	    <img src="../images/shopping-cart.svg" aria-hidden="true">
+	  </a> 
+		<span class="snipcart-summary">
+		  <span class="snipcart-total-items"></span>
+		</span>
+  </ul>
+</nav>

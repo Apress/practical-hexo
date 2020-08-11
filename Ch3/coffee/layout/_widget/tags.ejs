@@ -1,0 +1,10 @@
+<% if (theme.widgets.tags && site.tags.length){ %>
+    <div class="sidebar-module">
+        <h4>Tag Cloud</h4>
+        <p>
+            <% site.tags.sort('name').each(function(item){ %>
+                <a href="<%- config.root %><%- item.path %>" style="font-size: <%- Math.min(item.posts.length * 4 + 10, 30) %>px"><%= item.name %></a>
+            <% }); %>
+        </p>
+    </div>
+<% } %>

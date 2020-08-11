@@ -1,0 +1,11 @@
+<div class="grid">
+  <div class="post-image">
+    <a href="<%- url_for(item.path) %>">
+      <img src="<%- url_for(item.image) %>" alt="<%- item.name || "Untitled" %>">
+    </a>
+  </div>
+  <div class="post-details">
+    <a href="<%- url_for(item.path) %>"><%- item.name || "Untitled" %></a>
+    <div class="price">$<%= item.price.toFixed(2) %></div>
+  </div>
+</div>
